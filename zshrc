@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -8,8 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,6 +99,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+# TrustKernel
+export TKCORE_SDK=/home/zane/Desktop/pkcs11/TrustKernel_SDK
+#export TA_SIGN_KEY=/home/zane/Desktop/Workspace/TrustKernel_SDK/ta_kit/key
+#export PATH=$PATH:/home/zane/Desktop/Workspace/toolchains/aarch64/bin/
+export PATH=$PATH:/home/zane/Desktop/Toolchains/gcc-arm-8.2-2019.01-x86_64-arm-linux-gnueabi/bin/
+export PATH=$PATH:/home/zane/Desktop/Workspace/toolchains/aarch64/bin/
+export ROOT=/home/zane/Desktop/Workspace
+#export CROSS_COMPILE=aarch64-linux-gnu-
+
+# kitty
+alias kitty.diff="kitty +kitten diff"
+alias kitty.ssh="ssh"
+
+# nvim
 export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$HOME/Downloads/zig-linux-x86_64-0.11.0:$PATH"
