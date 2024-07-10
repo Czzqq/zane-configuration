@@ -1,3 +1,4 @@
+# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -99,18 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# TrustKernel
-export TKCORE_SDK=/home/zane/Desktop/pkcs11/TrustKernel_SDK
-#export TA_SIGN_KEY=/home/zane/Desktop/Workspace/TrustKernel_SDK/ta_kit/key
-#export PATH=$PATH:/home/zane/Desktop/Workspace/toolchains/aarch64/bin/
-export PATH=$PATH:/home/zane/Desktop/Toolchains/gcc-arm-8.2-2019.01-x86_64-arm-linux-gnueabi/bin/
-export PATH=$PATH:/home/zane/Desktop/Workspace/toolchains/aarch64/bin/
-export ROOT=/home/zane/Desktop/Workspace
-#export CROSS_COMPILE=aarch64-linux-gnu-
-
 # kitty
 alias kitty.diff="kitty +kitten diff"
 alias kitty.ssh="ssh"
 
 # nvim
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# git 
+alias gl='git log --graph --decorate --oneline --all'
