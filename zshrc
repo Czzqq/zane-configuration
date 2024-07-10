@@ -107,5 +107,5 @@ alias kitty.ssh="ssh"
 # nvim
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-# git 
+# git
 alias gl='git log --graph --decorate --oneline --all'
