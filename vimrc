@@ -11,4 +11,6 @@ set hls
 
 set expandtab
 
+set clipboard=unnamedplus
+
 set tags=./tags,tags;$HOME

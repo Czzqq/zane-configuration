@@ -102,10 +102,15 @@ source $ZSH/oh-my-zsh.sh
 
 # kitty
 alias kitty.diff="kitty +kitten diff"
-alias kitty.ssh="ssh"
+alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
 
 # nvim
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export EDITOR=vim
 
 # git
 alias gl='git log --graph --decorate --oneline --all'
+
+# proxy
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
