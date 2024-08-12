@@ -14,3 +14,10 @@ set expandtab
 set clipboard=unnamedplus
 
 set tags=./tags,tags;$HOME
+
+" Highlight trailing whitespace  
+highlight ExtraWhitespace ctermbg=red guibg=red  
+match ExtraWhitespace /\s\+$/
+
+" Automatically remove trailing whitespace on save  
+autocmd BufWritePre * :%s/\s\+$//e  
