@@ -10,6 +10,8 @@ set textwidth=107
 set showmatch
 set incsearch
 set smartcase
+set laststatus=2
+set statusline=%f%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v]\ [%p%%]
 
 set undofile
 set history=1000
@@ -39,3 +41,12 @@ match ExtraWhitespace /\s\+$/
 
 " Automatically remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Keymap
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap H :bprevious<CR>
+nnoremap L :bnext<CR>
