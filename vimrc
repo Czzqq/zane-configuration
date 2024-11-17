@@ -32,6 +32,7 @@ set expandtab
 set softtabstop=4
 
 set clipboard=unnamedplus
+"set clipboard+=unnamed
 
 set tags=./tags,tags;$HOME
 
