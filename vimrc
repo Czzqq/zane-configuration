@@ -14,6 +14,10 @@ set laststatus=2
 set statusline=%f%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v]\ [%p%%]
 
 set undofile
+set undodir=$HOME/.vim/undo/
+
+set directory=$HOME/.vim/swap/
+
 set history=1000
 
 set nowrap
