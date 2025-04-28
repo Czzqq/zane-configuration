@@ -44,7 +44,7 @@ set clipboard=unnamedplus
 set tags=./tags,tags;$HOME
 
 " Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=grey guibg=grey
 match ExtraWhitespace /\s\+$/
 
 " Automatically remove trailing whitespace on save
