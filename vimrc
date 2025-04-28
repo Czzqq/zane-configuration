@@ -35,6 +35,9 @@ set hls
 set expandtab
 set softtabstop=4
 
+set list
+set listchars=tab:>-,trail:-
+
 set clipboard=unnamedplus
 "set clipboard+=unnamed
 
