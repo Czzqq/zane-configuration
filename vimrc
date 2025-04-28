@@ -35,9 +35,6 @@ set hls
 set expandtab
 set softtabstop=4
 
-set list
-set listchars=tab:>-,trail:-
-
 set clipboard=unnamedplus
 "set clipboard+=unnamed
 
@@ -46,6 +43,9 @@ set tags=./tags,tags;$HOME
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=grey guibg=grey
 match ExtraWhitespace /\s\+$/
+
+set list
+set listchars=tab:→\ ,trail:·,extends:»,precedes:«,nbsp:+
 
 " Automatically remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
