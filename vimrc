@@ -20,8 +20,6 @@ set directory=$HOME/.vim/swap/
 
 set history=1000
 
-set nowrap
-
 filetype plugin indent on
 
 set nu
@@ -36,7 +34,6 @@ set expandtab
 set softtabstop=4
 
 set clipboard=unnamedplus
-"set clipboard+=unnamed
 
 set tags=./tags,tags;$HOME
 
@@ -46,6 +43,13 @@ match ExtraWhitespace /\s\+$/
 
 set list
 set listchars=tab:→\ ,trail:·,extends:»,precedes:«,nbsp:+
+
+" set nowrap
+set wrap
+set linebreak
+set showbreak=↪\
+set sidescroll=5
+set listchars=extends:›
 
 " Automatically remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
